@@ -10,3 +10,6 @@
 - [数据预处理笔记](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/6.%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E7%AC%94%E8%AE%B0.md)
 - [机器学习部分](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/7.%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%83%A8%E5%88%86.md)
 - [SKlearn模型评估方法](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/8.SKlearn%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95.md)
+
+## 算法总结
+![算法总结](http://ox5bam95j.bkt.clouddn.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E7%AE%97%E6%B3%95.png)
