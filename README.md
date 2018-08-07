@@ -12,5 +12,5 @@
 - [SKlearn模型评估方法](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/8.SKlearn%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95.md)
 ## 实战篇
 - 1.[数据探索](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/1.%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2/%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2%E4%BB%8B%E7%BB%8D.ipynb)
-- 2.[数据预处理](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/2.%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86.ipynb)
+- 2.[数据预处理](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/2.%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E4%BB%8B%E7%BB%8D.ipynb)
 
