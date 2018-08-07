@@ -37,19 +37,6 @@ data.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -236,19 +223,6 @@ data.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -436,7 +410,7 @@ data.describe()
 - `store_exp`：不应该存在负数、还可能存在离群值，最大消费为50000
 - online_exp：看上去没什么问题
 - store_trans和online_trans：看上去还比较合理
-- Q1~Q10：值的范围都在1~5之内，貌似没问题
+- Q1～Q10：值的范围都在1~5之内，貌似没问题
 
 那怎么处理这些错误的值呢？这取决于你的实际情况，如果你的样本量很大，不在乎这几个样本，那么就可以删除这些不合理的值。在这里，由于我们只有1000个样本，并且获取这些数据不易，所以得想办法填补这些异常值。我们先把这些值设为缺失状态。
 
@@ -547,19 +521,6 @@ data0.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -783,19 +744,6 @@ data2.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -931,14 +879,6 @@ for i in range(len(test_income)):
 test_income['income'] = mean
 ```
 
-    /home/heolis/anaconda3/envs/tensorflow/lib/python3.5/site-packages/ipykernel_launcher.py:5: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      """
-
-
 ### Bagging 填充
 Bagging是一种集成学习方法，可以用剩余变量训练一个Bagging模型，再用这个模型去预测缺失值，但是它的计算量要大的多。一般来说，如果中位数或者均值填补就能满足建模的需要，使用Bagging的方式填补，就是可以提高一点精度，但是提升的可能会很小，这在样本量很大的使用，就没有太大意义了。
 
@@ -958,14 +898,19 @@ $$X^*_{i,j} = \frac{X_{i,j} - quantile(X_{i,j}, 0.01)}{quantile(X_{i,j}, 0.99) -
 ## 有偏分布
 如果模型要求变量服从一定的对称分布（如正态分布），则需要进行数据变换去除分布中的偏度。<br>
 > 偏度是3阶标准化中心[矩](https://zh.wikipedia.org/wiki/%E7%9F%A9_(%E6%95%B8%E5%AD%B8)),是用来衡量分布不对称程度的，该统计两的数学定义如下：
+> 
 > $$偏度 = \frac {\sum(X_i + \bar x)^3}{(n - 1)v^\frac {2}{3}}$$ 
+> 
 > $$v=\frac{\sum (x_i = \bar x)^2}{(n-1)}$$
+> 
 > 数据分布对称时偏度=0，分布左偏时偏度<0，分布右偏时偏度>0，且偏离程度越大，偏度统计量的绝对值越大。
 
 有很多变换有助于去除偏度，如log变换、平方根或者取倒数。Box和Cox（1964）提出了含有一个参数$\lambda$的指数变换族：
+
 $$x^* = \begin{cases}
 \frac{x^\lambda - 1}{\lambda}, if(\lambda \ne 0) \\ \log (x), if(\lambda = 0)
 \end{cases}$$ 
+
 很容易看出这个变换族群包含了log(x)变换（$\lambda = 0$）、$x^2$变换（$\lambda = 2$）、sqrt(x)变换（$\lambda = 0.5$），以及$fraclx$变换（$\lambda = -1$）等常用的变换。Box-Cox覆盖的面更广，变换指数可能是任意实数。
 
 ## 处理离群点
@@ -973,15 +918,21 @@ $$x^* = \begin{cases}
 - 2.除了可视化这样直观的方式外，在一定的假设条件下，还有一些统计学的定义离群值的方法。如常用Z分值来判断可能的离群点。
 
 对于某观测变量Y的Z分值定义为：
+
 $$Z_i = \frac{Y_i - \bar Y}{s}$$
+
 其中$\bar Y$和$s$分别为观测列的均值和标准差。直观地理解Z分值就是对观测离均值的距离的度量（多少个标准差单位）。这种方法可能具有误导性，尤其是在样本量小的时候。但Iglewicz 和 Hoaglin 提出了使用修正后的Z分值来判断离群点：
+
 $$M_i = \frac{0.6745(Y_i - \bar Y)}{MAD}$$
+
 其中$MAD$是一系列$|Y_i - \bar Y|$的中位数，称为绝对离差中位数。建议将上面修正后的Z分值大于3.5的点标记为可能的离群点。
 
 离群点的影响取决于你使用的模型，有的模型对离群值很敏感，如线性回归、逻辑回归。有的模型对离群点具有抗性，如基于树的模型、支持向量机模型。此外，**离群点和错误的观测不一样，它是真实的观测，其中包含信息，所以不能随意删除。**
 
 如果你使用的模型对离群点非常敏感，可以使用空间表示变换。该变换将自变量取值映射到高纬的球面上。变换公式如下：
+
 $$X^*_{ij} = \frac{x_{ij}}{\sqrt{\sum_{j=1}^{p}{x^2_{ij}}}}$$
+
 其中$x_{ij}$表示第i个样本对应第j个变量的观测。由公式可见，每个样本都除以它们的平方模。公式的分母其实可以看作是该样本到p维空间0点的欧氏距离，有以下三点需要特别注意：
 - 1.在变换前需要对自变量标准化
 - 2.于中心化和标准化不用，这个变换操作的对象是所有的自变量。
