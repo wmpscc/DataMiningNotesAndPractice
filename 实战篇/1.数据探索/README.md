@@ -1,10 +1,11 @@
+若公式显示不全，请查看[notebook文件](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/1.%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2/%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2%E4%BB%8B%E7%BB%8D.ipynb)
 > 注意：本篇文章为读书笔记，若有侵权请联系我删除。
 ## Python 主要数据探索函数
 ### Pandas统计函数
 **Pandas主要统计特征函数**
 
 |方法名|函数功能|
-|:-:|:-:|:-:|
+|:-:|:-:|
 |sum()|计算数据样本的总和（按列计算）|
 |mean()|计算数据样本的算数平均数|
 |var()|计算数据样本的方差|
