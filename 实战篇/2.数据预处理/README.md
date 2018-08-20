@@ -1,4 +1,4 @@
-若公式显示不全，请查看[notebook文件](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/2.%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86.ipynb)
+若公式显示不全，请查看[notebook文件](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/2.%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E4%BB%8B%E7%BB%8D.ipynb)
 # 数据预处理
 > 注意：本篇文章为读书笔记，若有版权问题，请联系我删除。
 ### 服装消费者数据描述：
