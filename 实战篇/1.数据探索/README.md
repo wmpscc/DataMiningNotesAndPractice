@@ -1,5 +1,8 @@
 若公式显示不全，请查看[notebook文件](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/1.%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2/%E6%95%B0%E6%8D%AE%E6%8E%A2%E7%B4%A2%E4%BB%8B%E7%BB%8D.ipynb)
 > 注意：本篇文章为读书笔记，若有侵权请联系我删除。
+
+![总览](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/实战篇/1.数据探索/img/overview.png)
+
 ## Python 主要数据探索函数
 ### Pandas统计函数
 **Pandas主要统计特征函数**
@@ -393,7 +396,8 @@ plt.show()
 对比分析是值把两个相互联系的指标进行比较，从数量上展示和说明研究对象规模的大小，水平的高低，速度的快慢，以及各种关系是否协调。特别适用于指标间的横纵向比较、时间序列的比较分析。
 
 对比分析主要有一下两种形式：<br>
-** （1）绝对数比较**<br>
+
+**（1）绝对数比较**<br>
 绝对数比较是利用绝对数进行对比，从而寻找差异的一种方法。
 
 **（2）相对数比较**<br>
@@ -434,9 +438,12 @@ plt.show()
 #### 集中趋势度量
 - **1.均值**<br>
 均值是所有数据的平均值。<br>
-如果求n个原始观察数据的平均值，计算公式为：$$\rm mean(x) = \bar x = \frac{\sum x_i}{n}$$
-有时会用到加权平均值$$\rm mean(x) = \bar x = \frac{\sum \omega_{i}x_i}{\sum \omega_i}$$
-类似地，频率分布表的平均数计算公式：$$\rm mean(x) =\bar x = \sum \it f_{i}x_i$$
+如果求n个原始观察数据的平均值，计算公式为：
+$$\rm mean(x) = \bar x = \frac{\sum x_i}{n}$$
+有时会用到加权平均值
+$$\rm mean(x) = \bar x = \frac{\sum \omega_{i}x_i}{\sum \omega_i}$$
+类似地，频率分布表的平均数计算公式：
+$$\rm mean(x) =\bar x = \sum \it f_{i}x_i$$
 式中，$x_i$为第i个组段的组中值；$\it f_i$为第i组的频率。
 
 均值对极端值很敏感，如果数据中存在极端值或者数据是偏态分布的，那么均值就不能很好地度量数据的集中程度。为了消除少数极端值的影响，可以使用`截断均值`或者`中位数`来度量数据的集中趋势。截断均值是去掉高、低计算值之后的平均数。
@@ -447,8 +454,10 @@ plt.show()
 
 将某一数据集$x:(x_1,x_2, \dots, x_n)$按从小到大排列：$x_{(1)}, x_{(2)}, \dots, x_{(n)}$。<br>
 
-当n为奇数时$$M = x_{\frac {n+1}{2}}$$
-当n为偶数时$$M = \frac{1}{2}(x_{\frac{n}{2}} + x_{\frac{n+1}{2}})$$
+当n为奇数时
+$$M = x_{\frac {n+1}{2}}$$
+当n为偶数时
+$$M = \frac{1}{2}(x_{\frac{n}{2}} + x_{\frac{n+1}{2}})$$
 
 - **3.众数**<br>
 众数是指数据集中出现最频繁的值。众数并不经常用来度量定性变量的中心位置，更适用于定性变量。众数不具有偶唯一性，一般用于离散型变量而非连续型变量。
@@ -578,7 +587,9 @@ plt.show()
 在二元变量的相关分析过程中比较常用的有Pearson 相关系数、Spearman 质相关系数、判定系数。
 
 - **1.Pearson 相关系数**<br>
-一般用于分析两个连续性变量之间的关系，其计算公式如下。$$r = \frac{\sum ^n_{i = 1}(x_i - \bar x)(y_i - \bar y)}{\sqrt \sum ^n_{i = 1}(x_i - \bar x)^2\sum ^n_{i = 1}(y_i - \bar y)^2}$$
+一般用于分析两个连续性变量之间的关系，其计算公式如下。
+$$r = \frac{\sum ^n_{i = 1}(x_i - \bar x)(y_i - \bar y)}{\sqrt{ \sum ^n_{i = 1}(x_i - \bar x)^2 \sum ^n_{i = 1}(y_i - \bar y)^2}}$$
+
 相关系数r的取值范围：$-1 \le r \le 1$
 $$\begin{cases}r > 0 &为正相关 \\ r < 0 &为负相关 \\ |r| = 0 &表示不存在线性关系 \\ |r| = 1 &表示完全线性关系 \end{cases}$$
 0<|r|<1 表示存在不同程度线性相关：
