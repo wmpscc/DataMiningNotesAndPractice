@@ -19,5 +19,7 @@
 - 5.[Kaggle Titanic](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E5%AE%9E%E6%88%98%E7%AF%87/5.Titanic/Kaggle%20Titanic%20Best%20Score.ipynb)
 
 ## 高级特征工程
-该部分为Coursera上的[How to Win a Data Science Competition: Learn from Top Kagglers](https://www.coursera.org/learn/competitive-data-science/home/welcome)课程笔记。
+该部分为Coursera上的[How to Win a Data Science Competition: Learn from Top Kagglers](https://www.coursera.org/learn/competitive-data-science/home/welcome)课程笔记。下载后，请使用jupyter notebook打开。
+- [Tips and tricks](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E9%AB%98%E7%BA%A7%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/Tips%20and%20tricks.ipynb)
 - [Advanced Feature Engineering I](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E9%AB%98%E7%BA%A7%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/Advanced%20Feature%20Engineering%20I.ipynb)
+- [Hyperparameter tuning](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E9%AB%98%E7%BA%A7%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/Hyperparameter%20tuning.ipynb)
