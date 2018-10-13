@@ -23,3 +23,8 @@
 - [Tips and tricks](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E9%AB%98%E7%BA%A7%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/Tips%20and%20tricks.ipynb)
 - [Advanced Feature Engineering I](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E9%AB%98%E7%BA%A7%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/Advanced%20Feature%20Engineering%20I.ipynb)
 - [Hyperparameter tuning](https://github.com/wmpscc/DataMiningNotesAndPractice/blob/master/%E9%AB%98%E7%BA%A7%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/Hyperparameter%20tuning.ipynb)
+
+- feature engineering
+![feature_engineering](img/feature_engineering_total.png)
+- modeling
+![modeling_total](img/modeling_total.png)
